@@ -224,7 +224,7 @@ public func parse(level: String) throws -> GameState {
         case "+", "-", "|":
           // No special behavior
           break
-        case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9":
+        case "0"..."9", "α"..."ω":
           guard let statements = subroutines[String(c)] else {
             throw ParseError.unknownSubroutine(name:String(c))
           }

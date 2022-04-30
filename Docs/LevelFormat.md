@@ -58,7 +58,7 @@ Character | Meaning
 '-'       | a plain node
 '&#124;'  | a plain node
 '+'       | a plain node
-0-9       | a subroutine. The contents of the node are specified in the corresponding subroutine definition.
+0-9, α-ω  | a subroutine. The contents of the node are specified in the corresponding subroutine definition. (α-ω is the lower-case Greek alphabet.)
 A         | where the Spy is placed at the start of the level.
 C         | a briefcase
 E         | a pair of pistols
@@ -95,7 +95,7 @@ A subroutine is a single line of text, like this:
 0: enemy(blue,east);enemy(yellow,north);plant();target()
 ```
 
-The format is a single character, in the range 0-9, that is the subroutine name, followed by a colon, followed by
+The format is a single character, in the range 0-9 or α-ω, that is the subroutine name, followed by a colon, followed by
 zero or more function calls which are separated by semicolons. Each function call has an argument list of zero or more
 arguments.
 
